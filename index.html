@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product App</title>
+    <link rel="stylesheet" href="Syles/bootstrap2.min.css">
 </head>
 <body>
-    
+<nav class="navbar navbar-light bg-light">
+
+    <a href="/" class="navbar-brand">Navegacion</a>
+</nav>
+<div class="container">
+    <div id="app" class="row pt-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Add a Product</h4>
+                </div>
+                <form id="product-form" class="card-body">
+                    <div class="form-group">
+                        <label>Product Name</label>
+                        <input type="text" id="name" placeholder="Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Product cost per piece</label>
+                        <input type="number" id="price" step="0.01" placeholder="price" class="form-control">
+                    </div> <div class="form-group">
+                        <label>Product quantity</label>
+                        <input type="number" id="quantity" placeholder="quantity" class="form-control">
+                    </div> <div class="form-group">
+                        <label>Product Date</label>
+                        <input type="text" id="year" class="form-control">
+                    </div>
+                    <input type="submit" value="Save" class="btn btn-primary btn-block">
+                </form>
+            </div>
+        </div>
+        <div id="product-list" class="col-md-8"></div>
+    </div>
+</div>
+<script src="Script.js"></script>
 </body>
 </html>
